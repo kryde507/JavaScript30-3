@@ -27,6 +27,12 @@
       misc styles, nothing to do with CSS variables
     */
 
+        :root {
+            --main-color: #006854;
+            --blur: 10px;
+            --spacing: 10px;
+        }
+
         body {
             text-align: center;
             background: #193549;
@@ -34,6 +40,12 @@
             font-family: 'helvetica neue', sans-serif;
             font-weight: 100;
             font-size: 50px;
+        }
+
+        img {
+            padding: var(--spacing);
+            background: var(--main-color);
+            filter: blur(var(--blur));
         }
 
         .controls {
